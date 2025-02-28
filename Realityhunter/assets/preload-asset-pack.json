@@ -1,0 +1,100 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/botoncreditos.png",
+                "type": "image",
+                "key": "botoncreditos"
+            },
+            {
+                "url": "assets/botonefectosoff.png",
+                "type": "image",
+                "key": "botonefectosoff"
+            },
+            {
+                "url": "assets/botonefectoson.png",
+                "type": "image",
+                "key": "botonefectoson"
+            },
+            {
+                "url": "assets/botonhome.png",
+                "type": "image",
+                "key": "botonhome"
+            },
+            {
+                "url": "assets/botonjugar.png",
+                "type": "image",
+                "key": "botonjugar"
+            },
+            {
+                "url": "assets/botonsalir.png",
+                "type": "image",
+                "key": "botonsalir"
+            },
+            {
+                "url": "assets/botonsonido.png",
+                "type": "image",
+                "key": "botonsonido"
+            },
+            {
+                "url": "assets/botonvalidar.png",
+                "type": "image",
+                "key": "botonvalidar"
+            },
+            {
+                "url": "assets/fondo.png",
+                "type": "image",
+                "key": "fondo"
+            },
+            {
+                "url": "assets/Nivel2/fondonivel2.png",
+                "type": "image",
+                "key": "fondonivel2"
+            },
+            {
+                "url": "assets/Nivel3/fondonivel3.png",
+                "type": "image",
+                "key": "fondonivel3"
+            },
+            {
+                "url": "assets/guapen.png",
+                "type": "image",
+                "key": "guapen"
+            },
+            {
+                "url": [
+                    "assets/hover.mp3"
+                ],
+                "type": "audio",
+                "key": "hover"
+            },
+            {
+                "url": "assets/LOGOjuego.png",
+                "type": "image",
+                "key": "LOGOjuego"
+            },
+            {
+                "url": "assets/perdiste.png",
+                "type": "image",
+                "key": "perdiste"
+            },
+            {
+                "url": "assets/perdistepersonaje.png",
+                "type": "image",
+                "key": "perdistepersonaje"
+            },
+            {
+                "url": "assets/sello_400 (1).png",
+                "type": "image",
+                "key": "sello_400 (1)"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

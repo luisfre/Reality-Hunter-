@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Reality Hunter</title>
+
+	<script src="lib/phaser.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/loaders/MTLLoader.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/loaders/OBJLoader.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/loaders/FontLoader.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/geometries/TextGeometry.js"></script>
+	
+	
+	<script src="./phasereditor2d_scripts_core/lib/phasereditor2d_scripts_core.js"></script>
+	<script src="./phasereditor2d_scripts_simple_animations/lib/phasereditor2d_scripts_simple_animations.js"></script>
+	<script src="src/script-nodes/PreloadBarUpdaterScript.js"></script>
+	<script src="src/scenes/Preload.js"></script>
+	<script src="src/scenes/Level.js"></script>
+	<script src="src/scenes/MenupPrincial.js"></script>
+	<script src="src/scenes/Creditos.js"></script>
+	<script src="src/scenes/Sonido.js"></script>
+	<script src="src/scenes/Nivel1.js"></script>
+	<script src="src/scenes/Perdida.js"></script>
+	<script src="src/scenes/Nivel2.js"></script>
+	<script src="src/scenes/Nivel3.js"></script>
+	<script src="src/scenes/InstructivoNivel1.js"></script>
+	<script src="src/scenes/InstructivoNivel2.js"></script>
+	<script src="src/scenes/InstructivoNivel3.js"></script>
+	
+	
+	<script src="src/main.js"></script>
+
+	<style>
+		body {
+			background: #2f2f2f;
+			margin: 0;
+			padding: 0;
+		}
+		 #game-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .threejs-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Para que los eventos pasen a Phaser */
+        }
+	</style>
+
+</head>
+
+<body>
+	 <div id="game-container"></div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+    "id": "ae8786f0-9b52-4524-a276-009e20d8cf9f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Sonido",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "7485ddc4-37ac-4052-bd7c-55ebcff72c60",
+            "label": "fondo",
+            "texture": {
+                "key": "fondo"
+            },
+            "x": 958,
+            "y": 543
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "id": "e0dde02d-8fd4-4f56-85a1-b526fe94f6ea",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Creditos",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b5cbd9b0-0a50-4348-baea-704fcc4048bc",
+            "label": "fondo",
+            "texture": {
+                "key": "fondo"
+            },
+            "x": 957,
+            "y": 542
+        },
+        {
+            "type": "Image",
+            "id": "8ba84da0-d592-4c3c-9d80-3bca300bea2e",
+            "label": "lOGOjuego",
+            "texture": {
+                "key": "LOGOjuego"
+            },
+            "x": 972,
+            "y": 112,
+            "scaleX": 0.5314361913470916,
+            "scaleY": 0.5314361913470916
+        },
+        {
+            "type": "Text",
+            "id": "b21b53d4-b0e1-4dc8-b848-bf1ceffa0fc6",
+            "label": "UNIVERSIDAD CENTRAL DEL ECUADOR",
+            "x": 329,
+            "y": 235,
+            "scaleX": 1.3052523153875244,
+            "scaleY": 1.3052523153875244,
+            "text": "UNIVERSIDAD CENTRAL DEL ECUADOR",
+            "fontSize": "50px",
+            "fontStyle": "bold"
+        },
+        {
+            "type": "Image",
+            "id": "6907ad8a-7175-492f-834c-d337adbfd7bb",
+            "label": "sello_400__1_",
+            "texture": {
+                "key": "sello_400 (1)"
+            },
+            "x": 964,
+            "y": 453,
+            "scaleX": 0.363681411331222,
+            "scaleY": 0.363681411331222
+        },
+        {
+            "type": "Text",
+            "id": "22f045f6-a01a-4534-9070-3ee8c5548049",
+            "label": "UNIVERSIDAD CENTRAL DEL ECUADOR_1",
+            "x": 846,
+            "y": 686,
+            "scaleX": 1.3077879388554257,
+            "scaleY": 1.3077879388554257,
+            "text": "TUTOR",
+            "fontSize": "50px",
+            "fontStyle": "bold"
+        },
+        {
+            "type": "Text",
+            "id": "af582fdb-cfed-424f-8882-c264cb1c5611",
+            "label": "UNIVERSIDAD CENTRAL DEL ECUADOR_2",
+            "x": 749,
+            "y": 760,
+            "scaleX": 0.6621533629691342,
+            "scaleY": 0.6621533629691342,
+            "text": "LUIS FELIPE BORJA",
+            "fontSize": "60px"
+        },
+        {
+            "type": "Text",
+            "id": "90249e22-70f2-4185-87e1-d5e41c3e3a2b",
+            "label": "UNIVERSIDAD CENTRAL DEL ECUADOR_3",
+            "x": 717,
+            "y": 842,
+            "scaleX": 0.9372926702446784,
+            "scaleY": 0.9372926702446784,
+            "text": "DESARROLLADOR",
+            "fontSize": "60px",
+            "fontStyle": "bold"
+        },
+        {
+            "type": "Text",
+            "id": "51c0dcd5-aa71-4212-a33b-91b7bdf1d221",
+            "label": "UNIVERSIDAD CENTRAL DEL ECUADOR_4",
+            "x": 606,
+            "y": 921,
+            "scaleX": 0.6083033880210709,
+            "scaleY": 0.6083033880210709,
+            "text": "LUIS FELIPE RODRIGUEZ ESPITIA",
+            "fontSize": "60px"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
