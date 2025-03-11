@@ -68,19 +68,34 @@ class Boot extends Phaser.Scene {
         // Cargar los recursos necesarios
         this.load.pack("pack", "assets/preload-asset-pack.json");
         this.load.audio('backgroundMusic', 'assets/backgroundmusic.mp3');
+        this.load.audio('hoverSound', 'assets/hover.mp3');
+        this.load.audio('clickSound', 'assets/click.mp3');
     }
 
     create() {
-        // Cuando todos los recursos estén cargados, iniciar la siguiente escena
+       // Cuando todos los recursos estén cargados, iniciar la siguiente escena
         this.scene.start("Preload");
 
-        // Reproducir la música en loop si no se está reproduciendo ya
-        if (!this.sound.get('backgroundMusic')) {
-            let music = this.sound.add('backgroundMusic', {
-                loop: true,
-                volume: 0.5 // Ajusta el volumen si es necesario
-            });
-            music.play();
-        }
+        // Verificar si las variables globales de música y efectos de sonido ya están configuradas
+    if (typeof this.game.global === 'undefined') {
+        this.game.global = {};
+    }
+
+    // Establecer valores por defecto si no están configurados
+    if (typeof this.game.global.globalVolume === 'undefined') {
+        this.game.global.globalVolume = 0.5; // Volumen inicial de música y efectos de sonido
+    }
+    if (typeof this.game.config.controleffects === 'undefined') {
+        this.game.config.controleffects = true; // Efectos de sonido habilitados por defecto
+    }
+
+    // Crear la música de fondo si no se está reproduciendo
+    if (!this.sound.get('backgroundMusic')) {
+        let music = this.sound.add('backgroundMusic', {
+            loop: true,
+            volume: this.game.global.globalVolume // Ajustar volumen global de música
+        });
+        music.play();
+    }
     }
 }
