@@ -106,7 +106,7 @@ def insertar_fila_csv(title, text, fuente, razon, fake_new_class):
 @app.route('/load_news', methods=['GET'])
 def load_news():
     #archivo_csv_url = 'https://luisfre.github.io/Realityhunter/assets/noticias_clasificadas.csv'
-    backend_dir = os.path.dirname(os.path.abspath(_file_))  
+    backend_dir = os.path.dirname(os.path.abspath(__file__))  
     archivo_csv_local = os.path.join(backend_dir, '..', 'Realityhunter', 'assets', 'noticias_clasificadas.csv')
    # archivo_csv_url = r'C:\Users\vboxuser\Documents\repo\Reality-Hunter-\Realityhunter\assets\noticias_clasificadas.csv' 
     archivo_csv_local = os.path.abspath(archivo_csv_local)
