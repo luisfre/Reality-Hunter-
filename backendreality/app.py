@@ -105,16 +105,21 @@ def insertar_fila_csv(title, text, fuente, razon, fake_new_class):
 # Ruta para cargar el contenido del CSV alojado en GitHub Pages
 @app.route('/load_news', methods=['GET'])
 def load_news():
-    archivo_csv_url = 'https://luisfre.github.io/Realityhunter/assets/noticias_clasificadas.csv'
+    #archivo_csv_url = 'https://luisfre.github.io/Realityhunter/assets/noticias_clasificadas.csv'
+    backend_dir = os.path.dirname(os.path.abspath(_file_))  
+    archivo_csv_local = os.path.join(backend_dir, '..', 'Realityhunter', 'assets', 'noticias_clasificadas.csv')
+   # archivo_csv_url = r'C:\Users\vboxuser\Documents\repo\Reality-Hunter-\Realityhunter\assets\noticias_clasificadas.csv' 
+    archivo_csv_local = os.path.abspath(archivo_csv_local)
+  
     
     try:
         # Descargar el CSV desde la URL
-        response = requests.get(archivo_csv_url)
-        response.raise_for_status()  # Verificar que la descarga fue exitosa
-        content = StringIO(response.text)
+        #response = requests.get(archivo_csv_url)
+       # response.raise_for_status()  # Verificar que la descarga fue exitosa
+        #content = StringIO(response.text)
 
         # Cargar el CSV en un DataFrame
-        df = pd.read_csv(content, encoding='utf-8')
+        df = pd.read_csv(archivo_csv_local, encoding='utf-8')
 
         # Reemplazar NaN por valores predeterminados
         df.fillna('', inplace=True)
