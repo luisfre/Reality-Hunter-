@@ -421,8 +421,8 @@ textureLoader3.load('assets/Nivel1/plataforma.webp', (texture2) => {
 		// Propiedades de salto
 		this.jugador.isJumping = false;
 		this.jugador.velocityZ = 0;
-		this.jugador.jumpVelocity = 0.085;
-		this.jugador.gravity = 0.005;
+		this.jugador.jumpVelocity = 0.105;
+		this.jugador.gravity = 0.01;
 
 		// Animación
 		const frameRate = 10; // Frames por segundo
@@ -963,15 +963,15 @@ contadnoticias() {
 				this.container2D.position.y = 1 + Math.sin(time * speedosci) * amplitudeosci-1.5;	
 			
 				if (this.cursors.left.isDown) {
-					this.mano.position.x -= 0.1;
-					this.container2D.position.x -= 0.1;
+					this.mano.position.x -= 0.15;
+					this.container2D.position.x -= 0.15;
 				
 				} else if (this.cursors.right.isDown) {
-					this.mano.position.x += 0.1;
-					this.container2D.position.x += 0.1;}
+					this.mano.position.x += 0.15;
+					this.container2D.position.x += 0.15;}
 
 
-					const speedHorizontal = 0.1; // Velocidad de movimiento
+					const speedHorizontal = 0.15; // Velocidad de movimiento
 
 					// Movimiento hacia la izquierda
 					if (this.cursors.left.isDown) {
@@ -1003,7 +1003,7 @@ contadnoticias() {
 					this.ambiente.position.z = 0.2; // Ajusta la distancia según tu necesidad
 				}
 			}
-			const speedfondo = 0.05; 
+			const speedfondo = 0.08; 
 /***************************movimiento fondo *************************/			
 
 			if (this.fondo2_1 && this.fondo2_2) {
